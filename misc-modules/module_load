@@ -5,6 +5,8 @@ device=$1
 # Support read/write for owner and group, read only for everyone using 644
 mode="664"
 
+KERNEL_MOD_PATH=/lib/modules/5.15.18/extra/
+
 if [ $# -ne 1 ]; then
 	echo "Wrong number of arguments"
 	echo "usage: $0 module_name"

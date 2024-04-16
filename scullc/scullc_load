@@ -3,6 +3,8 @@ module="scullc"
 device="scullc"
 mode="664"
 
+KERNEL_MOD_PATH=/lib/modules/5.15.18/extra/
+
 # Group: since distributions do it differently, look for wheel or use staff
 if grep '^staff:' /etc/group > /dev/null; then
     group="staff"
